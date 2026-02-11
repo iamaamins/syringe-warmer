@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Syringe Warmer
+
+**Built for Smarter Injections** — Real engineering. Controlled heat. Practical performance.
+
+A landing page and waitlist for the Syringe Warmer, a device that pre-warms syringes to body temperature for a smoother, more comfortable injection experience. Designed by a healthcare professional.
+
+## Features
+
+- **Universal Fit** — Precision multi-groove channels support a wide range of syringe sizes. Small barrel or large barrel, one device handles it.
+- **Body-Temperature Controlled** — Warms near natural body temperature, not above it. Integrated temperature limiting prevents overheating.
+- **Rechargeable & Portable** — Integrated battery power. Use it anywhere, no outlet required.
+- **Lower Viscosity, Smoother Process** — Gentle warming reduces oil viscosity for smoother flow and better control during injection.
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org) (App Router)
+- [Tailwind CSS](https://tailwindcss.com) v4
+- [React Icons](https://react-icons.github.io/react-icons)
+- [ConvertKit](https://convertkit.com) (email waitlist)
+- Google Analytics 4
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
+# Add your ConvertKit API key, secret, and form ID
+
+# Run the dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Variable                | Description                                   |
+| ----------------------- | --------------------------------------------- |
+| `CONVERTKIT_API_KEY`    | ConvertKit public API key                     |
+| `CONVERTKIT_API_SECRET` | ConvertKit API secret (for subscriber lookup) |
+| `CONVERTKIT_FORM_ID`    | ConvertKit form ID for waitlist signups       |
 
-## Learn More
+## Pages
 
-To learn more about Next.js, take a look at the following resources:
+- `/` — Hero section with product image, copy, and waitlist signup form. "How It Works" section with feature breakdown.
+- `/thank-you` — Confirmation page shown after subscribing.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Deploy to [Vercel](https://vercel.com) or any platform that supports Next.js.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+```

@@ -10,28 +10,35 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Syringe Warmer - Warm Up Your Gear for Added Comfort',
+  title: 'Syringe Warmer — Built for Smarter Injections',
   description:
-    'The Syringe Warmer pre-warms your syringes to body temperature for a smoother, more comfortable experience. Join the waitlist for early access.',
+    'Pre-warms syringes to body temperature for a smoother, more comfortable injection experience. Universal fit, rechargeable, and portable. Designed by a healthcare professional. Join the waitlist for early access.',
   keywords: [
     'syringe warmer',
     'injection comfort',
     'warm syringes',
+    'body temperature syringe',
+    'universal syringe fit',
+    'rechargeable syringe warmer',
+    'portable syringe warmer',
+    'lower viscosity injection',
     'medical device',
     'pre-warm',
+    'controlled heat',
+    'healthcare',
   ],
   openGraph: {
-    title: 'Syringe Warmer - Warm Up Your Gear for Added Comfort',
+    title: 'Syringe Warmer — Built for Smarter Injections',
     description:
-      'Pre-warm your syringes to body temperature for a smoother, more comfortable experience. Join the waitlist today.',
+      'Universal fit. Body-temperature controlled. Rechargeable & portable. Pre-warms your syringes for a smoother, pain-free experience. Join the waitlist today.',
     type: 'website',
     images: ['/images/product.png'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Syringe Warmer - Warm Up Your Gear for Added Comfort',
+    title: 'Syringe Warmer — Built for Smarter Injections',
     description:
-      'Pre-warm your syringes to body temperature for a smoother, more comfortable experience.',
+      'Universal fit. Body-temperature controlled. Rechargeable & portable. Pre-warms your syringes for a smoother, pain-free experience.',
     images: ['/images/product.png'],
   },
 };
