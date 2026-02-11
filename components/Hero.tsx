@@ -68,6 +68,10 @@ export default function Hero() {
                 </svg>
               </div>
               <Subscribe />
+              <p className='text-[11px] text-gray-600 mt-2'>
+                Product visuals are conceptual renderings. Final design and
+                specifications may vary.
+              </p>
             </div>
           </div>
 

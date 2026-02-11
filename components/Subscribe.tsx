@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 
 export default function Subscribe() {
   const router = useRouter();
-  const [message, setMessage] = useState<string>();
+  const [message, setMessage] = useState<string>('');
 
   async function handleSubmit(formData: FormData) {
     const email = formData.get('email') as string;
@@ -15,6 +15,7 @@ export default function Subscribe() {
     const response = await subscribe(email);
     if (!response.ok) {
       setMessage(response.message);
+      setTimeout(() => setMessage(''), 5000);
       return;
     }
 
