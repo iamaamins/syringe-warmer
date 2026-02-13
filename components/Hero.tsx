@@ -44,8 +44,8 @@ export default function Hero() {
 
             {/* Subtitle */}
             <p className='text-lg text-gray-300 max-w-md leading-relaxed'>
-              Warm up your gear for added comfort. Pre-warms syringes to the
-              ideal temperature for a smoother, pain-free experience.
+              Warm up your gear for added comfort. Pre-warms syringes near body
+              temperature for smoother flow and added comfort.
             </p>
 
             {/* Join Waitlist CTA + Subscribe form */}

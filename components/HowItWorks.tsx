@@ -3,6 +3,7 @@ import {
   LuThermometer,
   LuBatteryCharging,
   LuDroplets,
+  LuCheck,
 } from 'react-icons/lu';
 
 const steps = [
@@ -30,17 +31,17 @@ const steps = [
     icon: LuBatteryCharging,
     title: 'Rechargeable & Portable',
     descriptions: [
-      'Integrated battery power.',
-      'Use it anywhere — no outlet required.',
-      'Consistent warmth without relying on external heat sources.',
+      'Integrated rechargeable battery power.',
+      'Built for gym bags, travel, and real-world routines.',
+      'No outlet required.',
     ],
   },
   {
     icon: LuDroplets,
     title: 'Lower Viscosity. Smoother Process',
     descriptions: [
-      'Gentle warming reduces oil viscosity, allowing smoother flow and better control during injection.',
-      'You know the routine. Improve the process.',
+      "The routine doesn't change. Optimize it.",
+      'Warming reduces oil viscosity, allowing smoother flow during injection.',
     ],
   },
 ];
@@ -79,9 +80,17 @@ export default function HowItWorks() {
               </div>
 
               <h3 className='mb-2 font-semibold'>{step.title}</h3>
-              <ul className='text-sm leading-relaxed opacity-65'>
+              <ul className='mt-4 space-y-3'>
                 {step.descriptions.map((description, i) => (
-                  <li key={i}>{description}</li>
+                  <li key={i} className='flex items-start gap-2.5'>
+                    <LuCheck
+                      className='text-orange-primary mt-1 shrink-0'
+                      size={16}
+                    />
+                    <span className='text-sm leading-relaxed text-gray-400'>
+                      {description}
+                    </span>
+                  </li>
                 ))}
               </ul>
             </div>

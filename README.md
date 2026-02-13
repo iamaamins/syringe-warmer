@@ -4,13 +4,6 @@
 
 A landing page and waitlist for the Syringe Warmer, a device that pre-warms syringes to body temperature for a smoother, more comfortable injection experience. Designed by a healthcare professional.
 
-## Features
-
-- **Universal Fit** — Precision multi-groove channels support a wide range of syringe sizes. Small barrel or large barrel, one device handles it.
-- **Body-Temperature Controlled** — Warms near natural body temperature, not above it. Integrated temperature limiting prevents overheating.
-- **Rechargeable & Portable** — Integrated battery power. Use it anywhere, no outlet required.
-- **Lower Viscosity, Smoother Process** — Gentle warming reduces oil viscosity for smoother flow and better control during injection.
-
 ## Tech Stack
 
 - [Next.js](https://nextjs.org) (App Router)
