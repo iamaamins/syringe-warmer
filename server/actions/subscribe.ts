@@ -31,8 +31,15 @@ export async function subscribe(email: string): Promise<Response<string>> {
       return { ok: false, message: 'Failed to subscribe. Please try again.' };
 
     const { subscription } = await subscribeRes.json();
-    if (subscription?.state === 'inactive')
-      return { ok: false, message: 'Please confirm your email address!' };
+    if (subscription?.state === 'inactive') {
+      const createdAt = new Date(subscription.created_at);
+      const now = new Date();
+      const diff = now.getTime() - createdAt.getTime();
+
+      // If created more than 1 minute ago, it's likely a resubmission
+      if (diff > 60000)
+        return { ok: false, message: 'Please confirm your email address!' };
+    }
 
     return { ok: true, data: 'Successfully subscribed!' };
   } catch (err) {
