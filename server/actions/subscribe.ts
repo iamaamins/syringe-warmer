@@ -30,6 +30,10 @@ export async function subscribe(email: string): Promise<Response<string>> {
     if (!subscribeRes.ok)
       return { ok: false, message: 'Failed to subscribe. Please try again.' };
 
+    const { subscription } = await subscribeRes.json();
+    if (subscription?.state === 'inactive')
+      return { ok: false, message: 'Please confirm your email address!' };
+
     return { ok: true, data: 'Successfully subscribed!' };
   } catch (err) {
     console.error(err);

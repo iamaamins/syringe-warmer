@@ -22,12 +22,13 @@ export default function ThankYou() {
         </div>
 
         <h1 className='text-3xl sm:text-4xl font-bold text-white mb-4'>
-          You&apos;re on the list!
+          Almost there, check your email
         </h1>
 
         <p className='text-gray-400 mb-8'>
-          Thanks for joining the Syringe Warmer waitlist. We&apos;ll keep you
-          updated on our progress and let you know when it&apos;s ready.
+          Thanks for joining the Syringe Warmer waitlist. Please verify your
+          email address from the message we just sent. You&apos;ll be added to
+          the list once your email is confirmed.
         </p>
 
         <Link
