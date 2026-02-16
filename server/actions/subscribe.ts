@@ -36,8 +36,8 @@ export async function subscribe(email: string): Promise<Response<string>> {
       const now = new Date();
       const diff = now.getTime() - createdAt.getTime();
 
-      // If created more than 1 minute ago, it's likely a resubmission
-      if (diff > 60000)
+      // If created more than 10 seconds ago, it's likely a resubmission
+      if (diff > 10000)
         return { ok: false, message: 'Please confirm your email address!' };
     }
 
