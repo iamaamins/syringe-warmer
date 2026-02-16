@@ -12,7 +12,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Syringe Warmer — Built for Smarter Injections',
   description:
-    'Pre-warms syringes to body temperature for a smoother, more comfortable injection experience. Universal fit, rechargeable, and portable. Designed by a healthcare professional. Join the waitlist for early access.',
+    'Pre-warms syringes to body temperature for a smoother, more comfortable injection experience. Universal fit, rechargeable, and portable. Designed by a healthcare professional.',
   keywords: [
     'syringe warmer',
     'injection comfort',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Syringe Warmer — Built for Smarter Injections',
     description:
-      'Universal fit. Body-temperature controlled. Rechargeable & portable. Pre-warms your syringes for a smoother, pain-free experience. Join the waitlist today.',
+      'Universal fit. Body-temperature controlled. Rechargeable & portable. Pre-warms your syringes for a smoother, pain-free experience.',
     type: 'website',
     images: ['/images/product.png'],
   },
