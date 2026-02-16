@@ -52,10 +52,11 @@ export default function Hero() {
             <div className='max-w-sm'>
               <div className='flex items-end gap-2 mb-2'>
                 <span className='text-lg font-semibold bg-gradient-to-r from-orange-primary to-amber-400 bg-clip-text text-transparent'>
-                  Join the Waitlist
+                  Join the waitlist to secure early access pricing before public
+                  launch.
                 </span>
                 <svg
-                  className='w-6 h-8 text-orange-primary/70 mb-[-4px]'
+                  className='w-10 h-14 text-orange-primary/70 mb-[-4px]'
                   viewBox='0 0 24 32'
                   fill='none'
                   stroke='currentColor'
@@ -64,7 +65,7 @@ export default function Hero() {
                   strokeLinejoin='round'
                 >
                   <path d='M6 4c4 2 8 8 6 16' />
-                  <path d='M8 18l4 4-4 4' />
+                  <path d='M8 22l4 4 4-4' />
                 </svg>
               </div>
               <Subscribe />
